@@ -1,0 +1,12 @@
+The game has started!!!
+
+<p>
+	Points: <%=h session[:points] %>
+	
+</p>
+
+
+<p>
+	Round: <%=h session[:round] %>
+	
+</p>

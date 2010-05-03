@@ -1,0 +1,36 @@
+The game has started!!!
+
+<p>Start Time: <%=h session[:start_time] %></p>
+<p>Penalty: <%=h session[:penalty] %> seconds</p>
+<p>Round: <%=h session[:round] %></p>
+
+<% if session[:question_type] == :company %>
+<h2>We are looking for a <i>company</i>!</h2>
+		
+<% elsif session[:question_type] == :person %>
+<h2>We are looking for a <i>person</i>!</h2>
+
+<% end %>
+
+<!-- Hints -->
+
+<ol id="hints">
+<li><%=h session[:hints][0] %></li>
+</ol>
+	
+<div id="hint_button">
+
+</div>
+	
+<%= link_to_remote "Get hint", :url => { :controller => :game,  :action => :hint },
+   :update => {:success => "hints", :failure => "hint_button"}, :position => :bottom %>
+
+
+<% form_tag(answer_path, :method => "post") do %>
+  <%= label_tag(:q, "The answer is:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Answer") %>
+<% end %>
+	
+	
+	

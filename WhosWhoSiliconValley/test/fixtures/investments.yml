@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  size: 1
+  type: MyString
+  date: 2010-04-30 22:10:44
+  investor: 
+
+two:
+  size: 1
+  type: MyString
+  date: 2010-04-30 22:10:44
+  investor: 

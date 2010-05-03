@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  company: 
+  person: 
+  start_date: 2010-04-30 22:09:53
+  end_date: 2010-04-30 22:09:53
+
+two:
+  name: MyString
+  company: 
+  person: 
+  start_date: 2010-04-30 22:09:53
+  end_date: 2010-04-30 22:09:53

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Who's who in Silicon Valley?</title>
+		 <%= javascript_include_tag 'prototype' %>
+	</head>
+	<body>
+		
+		<% if flash[:error] %>
+	      <div class="error"><%= flash[:error] %></div>
+	    <% end %>
+		
+		<% if flash[:notice] %>
+	      <div class="notice"><%= flash[:notice] %></div>
+	    <% end %>
+			
+		<%= yield %>
+		
+	</body>
+</html>

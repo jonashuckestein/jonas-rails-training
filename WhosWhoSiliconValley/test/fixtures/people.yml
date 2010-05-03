@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  firs_name: MyString
+  last_name: MyString
+  location: MyString
+  born: 2010-04-30 22:06:37
+
+two:
+  firs_name: MyString
+  last_name: MyString
+  location: MyString
+  born: 2010-04-30 22:06:37
